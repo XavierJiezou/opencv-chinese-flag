@@ -20,6 +20,9 @@ python main.py demo.png
 |![1024](guoqi/guoqi_1024.png)|![2048](guoqi/guoqi_2048.png)|![4096](guoqi/guoqi_4096.png)|
 # Reference
 > Flag: [http://www.gov.cn/guoqing/20201231/guoqi.zip](http://www.gov.cn/guoqing/20201231/guoqi.zip)
+> 
 > Demo: [https://v.douyin.com/dx6JUoo/](https://v.douyin.com/dx6JUoo/)
+> 
 > Code: [https://docs.opencv.org/master/d6/d00/tutorial_py_root.html](https://docs.opencv.org/master/d6/d00/tutorial_py_root.html)
+> 
 > The gradient of flag is made by [Adobe Photoshop](https://www.adobe.com/products/photoshop.html).
