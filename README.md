@@ -6,12 +6,16 @@ Add the Chinese flag to your avatar. (Happy National Day!)
 |![demo](img/demo.png)|![_new](img/_new.jpg)|
 # Install
 ```bash
-opencv-python==4.5.1.48
+pip install -r requirements.txt
 ```
 # Usage
 ```bash
 git clone https://github.com/XavierJiezou/opencv-chinese-flag.git
 cd opencv-chinese-flag
+python app.py
+```
+# Algorithm
+```
 python main.py img/demo.png
 ```
 # Flag
