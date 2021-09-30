@@ -1,9 +1,20 @@
 from flask import Flask, jsonify, request, render_template, redirect, url_for
 from main import main
+import sys
+import os
+import webview
 
 
-app = Flask(__name__)
-
+if getattr(sys, 'frozen', False):
+    template_folder = os.path.join(sys._MEIPASS, 'templates')
+    static_folder = os.path.join(sys._MEIPASS, 'static')
+    app = Flask(
+        __name__,
+        template_folder=template_folder,
+        static_folder=static_folder
+    )
+else:
+    app = Flask(__name__)
 
 
 @app.route('/')
@@ -21,4 +32,5 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port='9000')
+    webview.create_window('OPENCV-CHINESE-FLAG', app)
+    webview.start()
