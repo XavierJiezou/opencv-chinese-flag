@@ -27,7 +27,7 @@ def upload():
     inp_path = './static/img/upload/inp.png'
     out_path = './static/img/result/out.png'
     request.files.get('file').save(inp_path)
-    main(inp_path, 'flag.png', out_path)
+    main(inp_path, 'img/flag.png', out_path)
     return jsonify({'outdir': url_for('static', filename='img/result/out.png')})
 
 

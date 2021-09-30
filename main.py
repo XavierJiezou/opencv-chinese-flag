@@ -14,7 +14,7 @@ def main(im_1_path: str, im_2_path: str = 'img/flag.png', im_3_path: str = 'img/
         im_3_path (str): Path to save the composite image. Defaults ot `_new.jpg`.
     """
     im_1 = cv2.imread(im_1_path, flags=cv2.IMREAD_COLOR)
-    size = [max(im_1.shape)]*2
+    size = (max(im_1.shape),)*2
     im_2 = cv2.imread(im_2_path, flags=cv2.IMREAD_UNCHANGED)
     im_2 = cv2.resize(im_2, size)
     alpha = np.repeat(im_2[:, :, 3]/255, 3).reshape(im_1.shape[0], im_1.shape[1], 3)
