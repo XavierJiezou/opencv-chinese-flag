@@ -24,7 +24,7 @@ pyinstaller -w -F --add-data "templates;templates" --add-data "static;static" ap
 ```
 # Algorithm
 ```
-python main.py img/demo.png
+python algorithm.py img/demo.png
 ```
 # Flag
 | 1024x683| 2048x1366 | 4096x2731 |
