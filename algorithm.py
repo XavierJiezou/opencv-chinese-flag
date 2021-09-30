@@ -23,4 +23,4 @@ def algorithm(im_1_path: str, im_2_path: str = 'img/flag.png', im_3_path: str = 
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    algorithm(sys.argv[1])
