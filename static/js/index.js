@@ -16,8 +16,8 @@ $('#inputfile').bind('change', function() {
     var fr = new FileReader();
     fr.onload = function() {
         $('#imgShowHere').attr('src', fr.result)
-        $('#out').attr('src', '/static/img/result/out.png')
-        $('#out-a').attr('href', '/static/img/result/out.png')
+        // $('#out').attr('src', '/static/img/result/out.png')
+        // $('#out-a').attr('href', '/static/img/result/out.png')
     }
     fr.readAsDataURL(imgFile);
 });
@@ -36,6 +36,7 @@ $('#upload').click(function(){
         dataType: "json",
         success: function(res){
           $('#out').attr('src', res.outdir+'?'+Math.random())
+          $('#out-a').attr('href', res.outdir+'?'+Math.random())
         },
         error: function(err){
             console.log(err)
