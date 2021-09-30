@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, render_template, redirect, url_for
-from main import main
+from algorithm import algorithm
 import sys
 import os
 import webview
@@ -27,10 +27,15 @@ def upload():
     inp_path = './static/img/upload/inp.png'
     out_path = './static/img/result/out.png'
     request.files.get('file').save(inp_path)
-    main(inp_path, 'img/flag.png', out_path)
+    algorithm(inp_path, 'img/flag.png', out_path)
     return jsonify({'outdir': url_for('static', filename='img/result/out.png')})
 
 
-if __name__ == '__main__':
+def main():
     webview.create_window('OPENCV-CHINESE-FLAG', app)
     webview.start()
+
+
+if __name__ == '__main__':
+    main()
+    
