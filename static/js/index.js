@@ -17,7 +17,7 @@ $('#inputfile').bind('change', function() {
     fr.onload = function() {
         $('#imgShowHere').attr('src', fr.result)
         $('#out').attr('src', '/static/img/result/out.png')
-        $('#out_a').attr('src', '/static/img/result/out.png')
+        $('#out-a').attr('src', '/static/img/result/out.png')
     }
     fr.readAsDataURL(imgFile);
 });

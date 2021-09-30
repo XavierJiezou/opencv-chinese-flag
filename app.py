@@ -32,11 +32,6 @@ def upload():
     return jsonify({'outdir': url_for('static', filename='img/result/out.png')})
 
 
-def main():
-    webview.create_window('OPENCV-CHINESE-FLAG', app)
-    webview.start()
-
-
 if __name__ == '__main__':
-    main()
+    app.run()
     
