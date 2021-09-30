@@ -16,8 +16,8 @@ $('#inputfile').bind('change', function() {
     var fr = new FileReader();
     fr.onload = function() {
         $('#imgShowHere').attr('src', fr.result)
-        $('#out').attr('src', '/static/img/result/out.png')
-        $('#out-a').attr('href', '/static/img/result/out.png')
+        $('#out').attr('src', '/static/img/result/out.png' + '?' + Math.random())
+        $('#out-a').attr('href', '/static/img/result/out.png' + '?' + Math.random())
     }
     fr.readAsDataURL(imgFile);
 });
