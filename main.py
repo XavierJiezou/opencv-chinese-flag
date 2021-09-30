@@ -5,7 +5,7 @@ from tqdm import tqdm
 import concurrent.futures as cf
 
 
-def main(im_1_path: str, im_2_path: str = 'flag.png', im_3_path: str = '_new.jpg'):
+def main(im_1_path: str, im_2_path: str = 'img/flag.png', im_3_path: str = 'img/_new.jpg'):
     """Add a Chinese flag to your avatar
 
     Args:
