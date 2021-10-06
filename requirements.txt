@@ -1,5 +1,5 @@
 numpy==1.21.0
 flask==2.0.1
 opencv-python==4.5.1.48
-gunicore==20.0.1
-gevent==21.8.0
+gunicore
+gevent
