@@ -9,4 +9,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "app:app", "-k", "gevent"]
+CMD ["gunicorn", "app:app", "-k", "gevent", "-b", "0.0.0.0:5000"]
