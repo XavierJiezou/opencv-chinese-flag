@@ -26,7 +26,7 @@ docker pull xavierjiezou/opencv-chinese-flag:latest
 docker run -d -p 5001:5000 --name opencv-chinese-flag xavierjiezou/opencv-chinese-flag
 ```
 ---
-Finally, you can Visit `YOUR_IP_ADDRESS:5001` in your browser to have a look.
+Finally, you can visit `YOUR_IP_ADDRESS:5001` in your browser to have a look.
 # Algorithm
 ```
 python algorithm.py img/demo.png
