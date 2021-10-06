@@ -23,7 +23,7 @@ docker pull xavierjiezou/opencv-chinese-flag:latest
 ```
 3. Run the container in detached mode.
 ```bash
-docker run -d -p 5001:5000 --name opencv-chinese-flag xavierjiezou/opencv-chinese-flag
+docker run --rm -d -p 5001:5000 --name opencv-chinese-flag xavierjiezou/opencv-chinese-flag
 ```
 ---
 Finally, you can visit `YOUR_IP_ADDRESS:5001` in your browser to have a look.
