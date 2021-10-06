@@ -12,10 +12,10 @@ def algorithm(im_1_path: str, im_2_path: str = 'img/flag.png', im_3_path: str = 
         im_3_path (str): Path to save the composite image. Defaults ot `_new.jpg`.
     """
     im_1 = cv2.imread(im_1_path, flags=cv2.IMREAD_COLOR)
-    size = (max(im_1.shape),)*2
+    h, w, _ = im_1.shape
     im_2 = cv2.imread(im_2_path, flags=cv2.IMREAD_UNCHANGED)
-    im_2 = cv2.resize(im_2, size)
-    alpha = np.repeat(im_2[:, :, 3]/255, 3).reshape(im_1.shape[0], im_1.shape[1], 3)
+    im_2 = cv2.resize(im_2, [max(h, w)]*2)[0:h, 0:w, :]
+    alpha = np.expand_dims(im_2[:, :, 3]/255, 2).repeat(3, axis=2)
     im_3 = im_1*(1-alpha)+im_2[:, :, :3]*alpha
     cv2.imwrite(im_3_path, im_3)
 
