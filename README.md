@@ -14,6 +14,19 @@ git clone https://github.com/XavierJiezou/opencv-chinese-flag.git
 cd opencv-chinese-flag
 python app.py
 ```
+# Deploy
+1. Download and install Docker.
+> [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+2. Pull the container
+```bash
+docker pull xavierjiezou/opencv-chinese-flag:latest
+```
+3. Run the container in detached mode.
+```bash
+docker run -d -p 5001:5000 --name opencv-chinese-flag xavierjiezou/opencv-chinese-flag
+```
+---
+Finally, you can Visit `YOUR_IP_ADDRESS:5001` in your browser to have a look.
 # Algorithm
 ```
 python algorithm.py img/demo.png
