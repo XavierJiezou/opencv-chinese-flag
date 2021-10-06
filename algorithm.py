@@ -1,8 +1,6 @@
 import cv2
 import sys
 import numpy as np
-from tqdm import tqdm
-import concurrent.futures as cf
 
 
 def algorithm(im_1_path: str, im_2_path: str = 'img/flag.png', im_3_path: str = 'img/_new.jpg'):

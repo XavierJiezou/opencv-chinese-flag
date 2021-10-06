@@ -14,14 +14,6 @@ git clone https://github.com/XavierJiezou/opencv-chinese-flag.git
 cd opencv-chinese-flag
 python app.py
 ```
-# Build
-```
-pipenv install
-pipenv shell
-pip install -r requirements.txt
-pip install pyinstaller
-pyinstaller -w -F --add-data "templates;templates" --add-data "static;static" app.py
-```
 # Algorithm
 ```
 python algorithm.py img/demo.png

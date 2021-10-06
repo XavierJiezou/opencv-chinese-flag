@@ -37,6 +37,7 @@ $('#upload').click(function(){
         success: function(res){
           $('#out').attr('src', res.outdir+'?'+Math.random())
           $('#out-a').attr('href', res.outdir+'?'+Math.random())
+          $('#out-a-down').attr('href', res.outdir+'?'+Math.random())
         },
         error: function(err){
             console.log(err)
