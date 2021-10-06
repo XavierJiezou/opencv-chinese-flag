@@ -1,6 +1,7 @@
 # Introduction
 Add the Chinese flag to your avatar. (Happy National Day!)
 # Demo
+![site](img/site.png)
 | Original Avatar| Add Chinese Flag |
 |:--------------:|:----------------:|
 |![demo](img/demo.png)|![_new](img/_new.jpg)|
